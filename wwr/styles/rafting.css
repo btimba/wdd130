@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color:rgb(92, 212, 212) ;
+    --secondary-color: rgb(150, 117, 182) ;
+    --accent-color: rgb(10, 52, 68);
+    --accent-color2: rgb(11, 11, 71);
+
+    --nav-background-color: rgb(243, 189, 243);
+    --nav-link-color: #745757;
+    --nav-hover-color:#afa2a2 ;
+    --nav-hover-background-color:steelblue ;
+
+    --heading-font:,arial,sans-serif ;
+    --paragraph-font:arial,sans-serif ;
+}
+
+* *:before, *:after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+img {
+    width: 400px;
+    display:inline-flex;
+     
+}
+
+h1 {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    display: grid;
+    color: rgb(8, 8, 7);
+    width: 130px;
+    right: 20em;
+}
+
+.hero {
+    position: relative;
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.hero p{
+    background-color: black;
+    float: left;
+    top: 400px;
+
+}    
+
+.hero article img {
+    float: right;
+    margin: 10px;
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    right: 20px;
+}
+
+.sociallinks img {
+    width: 50px;
+}
