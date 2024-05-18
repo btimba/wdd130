@@ -11,12 +11,14 @@
     --nav-hover-color:#afa2a2 ;
     --nav-hover-background-color:steelblue ;
 
-    --heading-font:,arial,sans-serif ;
+    --heading-font:arial,sans-serif ;
     --paragraph-font:arial,sans-serif ;
 }
 
-* *:before, *:after{
+header {
+
     box-sizing: border-box;
+    display: inline-flex;
 }
 
 body {
@@ -33,49 +35,60 @@ header {
 
 img {
     width: 400px;
-    display:inline-flex;
-     
+       
 }
 
 h1 {
     position: absolute;
     top: 25px;
     text-align: center;
-    display: grid;
+    display: flex;
     color: rgb(8, 8, 7);
     width: 130px;
     right: 20em;
+    align-items: self-start;
 }
 
 .hero {
     position: relative;
-    grid-column: 1/-1;
-    grid-row: 1;
-}
+    display: flex;
 
+}
 
 .hero img {
     width: 100%;
     height: auto;
     position: relative;
+    display:inline-flex;
 }
 
 .hero p{
-    background-color: black;
-    float: left;
-    top: 400px;
+    background-color: rgb(187, 202, 182);
+    align-content: flex-start;
+    justify-content: flex-start;
 
 }    
 
 .hero article img {
-    float: right;
     margin: 10px;
     width: 400px;
-    position: absolute;
     top: 400px;
     right: 20px;
+    justify-content: flex-end;
+    
 }
 
 .sociallinks img {
+    width: 50px;
+}
+
+.sitelinks {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.sitelinks img {
     width: 50px;
 }
