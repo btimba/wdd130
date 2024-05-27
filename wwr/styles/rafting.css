@@ -6,10 +6,10 @@
     --accent-color: rgb(10, 52, 68);
     --accent-color2: rgb(11, 11, 71);
 
-    --nav-background-color: rgb(243, 189, 243);
+    --nav-background-color: rgb(63, 85, 94);
     --nav-link-color: #745757;
-    --nav-hover-color:#afa2a2 ;
-    --nav-hover-background-color:steelblue ;
+    --nav-hover-color:#0e0707 ;
+    --nav-hover-background-color:rgb(54, 136, 212) ;
 
     --heading-font:arial,sans-serif ;
     --paragraph-font:arial,sans-serif ;
@@ -27,68 +27,117 @@ body {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 150px auto;
-    align-items: center;
-    background-color: blueviolet;
-}
-
-img {
-    width: 400px;
-       
-}
-
-h1 {
-    position: absolute;
-    top: 25px;
-    text-align: center;
-    display: flex;
-    color: rgb(8, 8, 7);
-    width: 130px;
-    right: 20em;
-    align-items: self-start;
+	display: grid;
+	border-bottom: 1px solid #000000;
+    grid-template-columns :200px auto;
+	align-items: center;
+	background-color: var(--nav-background-color);
+	
+    
 }
 
 .hero {
-    position: relative;
-    display: flex;
-
+	position: relative;
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    position: relative;
-    display:inline-flex;
-}
-
-.hero p{
-    background-color: rgb(187, 202, 182);
-    align-content: flex-start;
-    justify-content: flex-start;
-
-}    
-
-.hero article img {
-    margin: 10px;
-    width: 400px;
-    top: 400px;
-    right: 20px;
-    justify-content: flex-end;
     
 }
 
-.sociallinks img {
-    width: 50px;
+.logo img {
+	justify-self: center;
+	width: 200px;
+	height: auto;
+	display: grid;
+
 }
 
-.sitelinks {
+.hero h1 {
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
+	background-color: rgb(209, 216, 223);
+	width: 100%;
+	top:200px;
+    position: absolute;
+	text-align: center;
+	
+}
+
+.hero p {
+	color:rgb(17, 17, 17);
+	padding:0 2em;
+	font-weight: 1em;
+}
+
+article{
+	
+	position: absolute;
+	top: 300px;
+	right: 30px;
+	background-color: rgb(228, 216, 200);
+	
+}
+
+.hero article img{
+	width: 200px;
+	right: 30px;
+	float: right;
+	padding: 0 0 0 2em;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(4, 200px);
+	justify-content: center;
+}
+
+.grid {
+
+	color:#fae7e7;
+	padding: 20px;
+	text-decoration: none;
+	justify-self: center;
+}
+
+.grid:hover {
+	background-color: var(--nav-hover-color);
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+img {
+	display: inline-flex;
+	width: 250px;
+	justify-content: space-around;
+	
+}
+
+figcaption{
+	font-size: 15px;
+	background-color: rgb(211, 228, 228);
+	justify-content: flex-start;
+}
+
+figure {
+	margin: 0;
+}
+.adventure h2 {
+	display: grid;
+	justify-content: center;
+}
+
+footer{
+	display: grid;
+	margin-bottom: 20px;
+}
+
+.sociallinks {
     display:flex;
-    align-items: center;
-    justify-content: space-around;
 
 }
 
-.sitelinks img {
+.sociallinks img {
     width: 50px;
 }
