@@ -140,12 +140,14 @@ figure {
 }
 
 footer{
-	display: grid;
+	display: flex;
 	margin-bottom: 20px;
 }
 
 .sociallinks {
     display:flex;
+	margin: 2rem;
+	gap: 20px;
 
 }
 
@@ -183,20 +185,20 @@ p{
 }
 
 form{
-	float: left;
+	text-align: justify;
 	margin: 2rem;
-	
 	width: 50%;
 	height: auto;
 	border: 1px solid #0e0707;
 	background-color: rgb(235, 235, 222);
+	align-self: center;
 }
 
 button {
 	background-color: navy;
 	color:#fae7e7;
-	margin: 10px;
-	padding: .5em;
+	margin: 20px;
+	padding: 1.5em;
 }
 
 button:hover{
@@ -213,4 +215,83 @@ fieldset {
 
 figcaption {
 	text-align: center;
+}
+
+table{
+	border: 2px solid #000;
+	width: 60%;
+	padding: 1rem;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+th,td{
+	
+	border: 1px solid #0000;
+	border-radius: 10px;
+	background-color: #96D4D4;
+	padding: 20px;
+	width: 10px;
+	text-align: justify;
+}
+
+.trips{
+	display: flex;
+	justify-content: space-between;
+	padding: 5rem;
+}
+
+h2 {
+
+	text-align: center;
+	padding: 2rem;
+
+}
+
+caption{
+	font-weight: bold;
+}
+
+.banner{
+	width: 100%;
+	height: 20%;
+}
+
+.overlay img{
+	width: 100%;
+	height: auto;
+}
+
+.overlay{
+	position: relative;
+}
+
+.overlay h2,p{
+	position: absolute;
+	margin: 30px;
+}
+
+p {
+	padding-top: 5rem;
+	font-weight: 900;
+}
+
+.additional {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	border-bottom: 1px solid #524e4e;
+}
+
+form {
+	display: block;
+}
+
+h3 {
+	
+}
+
+form {
+	height: fit-content;
+	width: auto;
 }
