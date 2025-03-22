@@ -8,10 +8,11 @@
 * {
     margin: 0;
     padding: 5px;
-    max-width: 800px;
+    max-width: 840px;
+    
 }
 
-h1,h2 { 
+h1,h2,h3 { 
     font-family: Pacifico,cursive,serif;
 }
 
@@ -22,13 +23,98 @@ h1 {
     background: #33a4e0;
     box-shadow: 0 0 30px #111;
     opacity: 0.9;
+}
+
+h2 {
+    position:absolute;
+    top: 585px;
+}
+
+h3 {
+    grid-column:3/6 ;
+    
+}
+
+figcaption {
+    font-size: small;
+    background-color: #a2bcf3;
+    justify-content: center;
+}
+
+nav {
+    display:flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-content: center;
 
 }
 
+header {
+    display:grid;
+    max-width:840px;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    margin: 1rem auto;
+    border-bottom: 1px solid #111;
+    background-color: var(--accent1-color)
+    
+}
+
+section {
+    display: grid;
+    margin: 1rem auto;
+	border: 1px solid rgb(0 0 0 / 0.1);
+	padding: 1em;
+	background-color: #ace;
+	width: min(800px, 100%);
+	
+}
+
+footer {
+    display: flex;
+    margin: 1rem auto;
+    border-top: #140f0f;
+    padding: 1px;
+    background-color: #ace;
+    width: 840px;
+    height: 70px;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    justify-content: space-around;
+}
+
+.adventure img {
+    width: 100px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links{
+    align-self: center;
+
+}
+
+.social-links img {
+    width: 30px;
+    display: flex;
+    
+}
 
 .social-links a {
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    
 }
+
 
 .hero {
     position: relative;
@@ -56,4 +142,33 @@ h1 {
 .art img {
     width: 130px;
     float:right;
+}
+
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 120px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: rgb(71, 7, 7);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.history {
+    display: flex;
+    justify-content: space-around;
 }
