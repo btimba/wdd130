@@ -1,8 +1,10 @@
 :root {
-    --primary-color:#003049;
-    --secondary-color:#d62828;
-    --accent1-color:#f77f00;
-    --accent2-color:#fcbf49
+    --primary-color:#10514A;
+    --secondary-color:#6AB187;
+    --accent-color1:#6704FB;
+    --accent-color2:#dad7cd;
+    --accent-color3:#264653;
+    
 }
 
 * {
@@ -22,7 +24,7 @@ h1,h2,h3,h4 {
 
 h1 {
     position: absolute;
-    top: 100px;
+    bottom: 300px;
     left: 300px;
     background: #33a4e0;
     box-shadow: 0 0 30px #111;
@@ -32,10 +34,11 @@ h1 {
 h2 {
     position: absolute;
     top: 585px;
+    left:350px;
 }
 
 h3 {
-    grid-column:3/6;
+    grid-column:2/6;
     text-decoration: underline;
     
 }
@@ -43,6 +46,7 @@ h3 {
 h4 {
     font-weight: bolder;
     padding: 1rem;
+    margin-left: 130px;
 }
 
 figure {
@@ -82,31 +86,32 @@ header {
     align-items: center;
     margin: 1rem auto;
     border-bottom: 1px solid #111;
-    background-color: var(--accent1-color)
+    background-color: var(--secondary-color)
     
 }
 
 section {
     display: grid;
+    grid-template-columns: 3fr 1fr;
     margin: 1rem auto;
 	border: 1px solid rgb(0 0 0 / 0.1);
 	padding: 1em;
 	background-color: #ace;
 	width: min(800px, 100%);
-    justify-content: center;
 	
 }
 
 form {
-    width: 800px;
+    width: 380px;
     margin: 0 auto;
     padding: 0.5em;
     border: 1px solid #000;
     border-radius: 0.5rem;
-    background-color: rgb(121, 118, 118);
+    background-color: #CCCCCC;
     display: grid;
     justify-content: space-around;
 }
+
 
 fieldset {
     display: grid;
@@ -133,7 +138,6 @@ input,select,textarea {
     
 }
 
-
 input[type="checkbox"] {
     width: 20px;
     height: 20px;
@@ -147,11 +151,11 @@ input[type="radio"]{
 }
 
 button {
-    margin: 0 18rem;
-    background-color:rgb(79, 31, 255);
+    margin: 0 8rem;
+    height: 50px;
+    background-color: #9999FF;
     color: #250e0e;
     border: 2px solid #222;
-    border-radius: 0.2rem;
     padding: .8rem;
     font-size: 1.2rem;
     cursor: pointer;
@@ -166,17 +170,21 @@ button:hover {
 }
 
 table{
-    border: 1.5px solid #000;
+
+    border: 2px solid #000;
+    border-collapse: collapse;
     width: 50%;
     padding: 1rem;
 
 }
 
 th,td {
-    border: 1px #d62828;
-    background-color: #33a4e0;
-    padding: 0.5 rem;
+    border: 1px #a70505;
+    background-color: #214457;
+    padding: 0.5rem;
     text-align: justify;
+    color: #fff;
+    
 }
 
 footer {
@@ -184,14 +192,14 @@ footer {
     margin: 1rem auto;
     border-top: #140f0f;
     padding: 1px;
-    background-color: #ace;
+    background-color:var(--secondary-color);
     width: 840px;
     height: 70px;
 }
 
 .action {
     font-size: xx-large;
-    background-color: #33a4e0;
+    background-color: var(--accent-color2);
     width: max-content;
 }
 
@@ -243,9 +251,9 @@ footer {
     text-decoration: underline;
     justify-content: center;
     align-items: center;
+    color: #000;
     
 }
-
 
 .hero {
     position: relative;
@@ -262,12 +270,16 @@ footer {
     top: 250px;
     bottom: 50px;
     left: 50px;
-    background:#d62828;
+    background:#A71B1B;
     border: 1px solid rgb(7, 7, 7);
     padding: 1rem;
     box-shadow: 0 0 30px #111;
     opacity: 0.9;
-    
+    color: #fff;
+}
+
+.art h1 {
+    color: #000;
 }
 
 .art img {
@@ -286,11 +298,13 @@ footer {
     padding: 20px;
     flex-wrap: wrap;
     font-size: 1.2rem;
+    
 }
 
 .navigation a {
     display: block;
     text-decoration: none;
+    color: #0e0d0d;
 }
 
 .navigation a:hover {
@@ -328,28 +342,31 @@ footer {
 
 .page {
     display:inline-block;
+    background: antiquewhite;
     
 }
 
 .col {
-    float:left;
     padding: 10px;
-    height: auto;
 }
 
 .left {
-    width: 50%;
+    width: 40%;
+    float: left;
 }
 
 .right {
-    float: right;
     width: 50%;
-    display: contents;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .purpose {
+    background: aquamarine;
     display: grid;
     justify-items: center;
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -368,4 +385,8 @@ footer {
     display: block;
     font-weight: bolder;
     text-decoration: none;
+}
+
+.hero h1 {
+bottom: 200px;
 }
